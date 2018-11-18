@@ -104,7 +104,7 @@ public class Frame extends JFrame implements ActionListener {
     	all="";allUsers="";
     	if (e.getSource() == sendButton) {
 			try {
-				if(this.message.getText().equals("exit")){
+				if(this.message.getText().equalsIgnoreCase("exit")){
 					this.dispose();
 				}
 				else{
